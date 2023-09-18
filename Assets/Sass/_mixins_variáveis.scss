@@ -21,7 +21,7 @@ $preto: #000000;
 // mixins
 @mixin responsive($responsive){
     @if $responsive == tablet{
-        @media (max-width: 950px){
+        @media (max-width: 960px){
             @content;
         }
     } @else if $responsive == mobile{

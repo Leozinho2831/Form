@@ -5,7 +5,7 @@
   width: 1000px;
   height: 500px;
 }
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   .main__form {
     flex-direction: column;
     width: 300px;
@@ -23,7 +23,7 @@
   height: 500px;
   background: linear-gradient(135deg, #202981 25%, #6473FF 85%);
 }
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   .main__form .form__capa {
     width: 300px;
     height: 300px;
@@ -38,6 +38,11 @@
 .main__form .sing {
   animation: translate 0.5s ease forwards;
 }
+@media (max-width: 960px) {
+  .main__form .sing {
+    animation-name: translateResponsive;
+  }
+}
 .main__form .form__sing, .main__form .form__login {
   display: flex;
   flex-direction: column;
@@ -46,7 +51,7 @@
   width: 500px;
   height: 500px;
 }
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   .main__form .form__sing, .main__form .form__login {
     width: 300px;
     height: 300px;
@@ -77,6 +82,16 @@ main {
   }
   100% {
     transform: translateX(100%);
+    background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
+  }
+}
+@keyframes translateResponsive {
+  0% {
+    transform: translateY(0);
+    background: linear-gradient(135deg, #202981 25%, #6473FF 85%);
+  }
+  100% {
+    transform: translateY(100%);
     background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
   }
 }

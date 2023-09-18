@@ -44,6 +44,10 @@
 
     .sing{
         animation: translate 0.5s ease forwards;
+
+        @include responsive(tablet){
+            animation-name: translateResponsive;
+        }
     }
 
     .form__sing, .form__login{

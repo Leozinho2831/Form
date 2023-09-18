@@ -33,6 +33,20 @@ main{
     }
 }
 
+@keyframes translateResponsive {
+    0%{
+        transform: translateY(0);
+        background: linear-gradient(135deg,
+                    $dark-blue 25%, $light-blue 85%);
+    }
+
+    100%{
+        transform: translateY(100%);
+        background: linear-gradient(135deg,
+                    $dark-red 25%, $light-red 85%);
+    }
+}
+
 @keyframes barInput {
     0% {
         width: 0;
