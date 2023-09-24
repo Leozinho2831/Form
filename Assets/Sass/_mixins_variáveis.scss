@@ -10,7 +10,7 @@ $dark-red: #FF0000;
 $light-red: #FF4A4A;
 
 $dark-grey: #585757;
-$light-grey: #6E6E6E;
+$light-grey: #838383;
 
 $background-main: #e4e4e4;
 $background-form: #b3b1b1;
@@ -18,14 +18,18 @@ $background-form: #b3b1b1;
 $branco: #ffffff;
 $preto: #000000;
 
+// spaces
+$space: 20px;
+$gap: 50px;
+
 // mixins
 @mixin responsive($responsive){
     @if $responsive == tablet{
-        @media (max-width: 960px){
+        @media (max-width: 1070px){
             @content;
         }
     } @else if $responsive == mobile{
-        @media (max-width: 500px){
+        @media (max-width: 600px){
             @content;
         }
     }

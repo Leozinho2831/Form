@@ -2,7 +2,6 @@
 
 .main__form{
     display: flex;
-    align-items: stretch;
 
     position: relative;
     width: 1000px;
@@ -10,6 +9,11 @@
 
     @include responsive(tablet){
         flex-direction: column;
+        width: 500px;
+        height: 1000px;
+    }
+
+    @include responsive(mobile){
         width: 300px;
         height: 600px;
     }
@@ -18,50 +22,188 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 1;
+
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         width: 500px;
         height: 500px;
 
         background: linear-gradient(135deg,
                     $dark-blue 25%, $light-blue 85%);
         
-        @include responsive(tablet){
+        @include responsive(mobile){
             width: 300px;
             height: 300px;
         }
 
         h1{
             font: {
-                size: 80px;
+                size: 100px;
                 family: $fonte-title;
                 weight: 400;
             }
+
+            @include responsive(mobile){
+                font-size: 75px
+            }
             color: $branco;
         }
+    }
+
+    .form__sing, 
+    .form__login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $space;
+        position: relative;
+
+        width: 500px;
+        height: 500px;
+
+        @include responsive(mobile){
+            width: 300px;
+            height: 300px;
+        }
+
+        label{
+            margin: 30px 0 0 0;
+
+            font: {
+                family: $fonte-form;
+                size: 24px;
+            }
+            color: $dark-grey;
+
+            @include responsive(mobile){
+                font-size: 20px;    
+            }
+        }
+
+        input{
+            padding: 12px 8px;
+
+            background-color: transparent;
+            border-bottom: 2px solid $light-grey;
+            font: {
+                family: $fonte-form;
+                size: 20px;
+            }
+
+            outline: none;
+
+            @include responsive(mobile){
+                padding: 8px 6px;
+                font-size: 16px;
+            }
+        }
+
+        .form__password{
+            width: 100%;
+        }
+
+        span{
+            position: absolute;
+            right: 25px;
+    
+            color: $dark-grey;
+
+            z-index: 1;
+            cursor: pointer;
+    
+            &:first-of-type{
+                display: inline;
+            }
+    
+            &:last-of-type{
+                display: none;
+            }
+        }
+
+        p{
+            padding: 20px 0;
+
+            text-align: end;
+            color: $blue-link;
+            font: {
+                family: $fonte-form;
+                size: 20px;
+            }
+
+            cursor: pointer;
+        }
+
+        .login__enviar,
+        .sing__enviar{
+            width: 120px;
+            height: 50px;
+            align-self: center;
+
+            border-radius: 5px;
+            color: $branco;
+            font: {
+                family: $fonte-form;
+                size: 22px; 
+            }
+
+            cursor: pointer;
+        }
+
+        .login__enviar{
+            background-color: $dark-blue;
+        }
+
+        .sing__enviar{
+            background-color: $dark-red;
+        }
+    }
+
+    .login__termos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $gap;
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            label{
+                margin: 0;
+    
+                font: {
+                    family: $fonte-form;
+                    size: 1.2rem;
+                }
+
+                color: $dark-grey;
+            }
+        }
+    }
+
+    .submit{
+        width: 100px;
+        cursor: pointer;
     }
 
     .sing{
         animation: translate 0.5s ease forwards;
 
         @include responsive(tablet){
-            animation-name: translateResponsive;
+            animation: translateResponsive 0.5s ease forwards;
         }
     }
 
-    .form__sing, .form__login{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
+    .visibility{
+        span{
+            &:first-of-type{
+                display: none;
+            }
 
-        width: 500px;
-        height: 500px;
-
-        @include responsive(tablet){
-            width: 300px;
-            height: 300px;
+            &:last-of-type{
+                display: inline;
+            }
         }
     }
 }
