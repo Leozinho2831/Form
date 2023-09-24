@@ -197,6 +197,16 @@ body .main {
     background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
   }
 }
+@keyframes translate-reverse {
+  0% {
+    transform: translateX(100%);
+    background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
+  }
+  100% {
+    transform: translateX(0);
+    background: linear-gradient(135deg, #1e2885 25%, #707efc 85%);
+  }
+}
 @keyframes translateResponsive {
   0% {
     transform: translateY(0);
@@ -205,5 +215,15 @@ body .main {
   100% {
     transform: translateY(100%);
     background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
+  }
+}
+@keyframes translate-reverseResponsive {
+  0% {
+    transform: translateY(100%);
+    background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
+  }
+  100% {
+    transform: translateY(0);
+    background: linear-gradient(135deg, #1e2885 25%, #707efc 85%);
   }
 }/*# sourceMappingURL=style.css.map */
