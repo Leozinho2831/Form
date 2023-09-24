@@ -55,7 +55,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: $space;
+        padding: 0 $space;
         position: relative;
 
         width: 500px;
@@ -138,9 +138,9 @@
             width: 120px;
             height: 50px;
             align-self: center;
+            margin: 10px 0 0 0;
 
             border-radius: 5px;
-            color: $branco;
             font: {
                 family: $fonte-form;
                 size: 22px; 
@@ -150,41 +150,14 @@
         }
 
         .login__enviar{
-            background-color: $dark-blue;
+            background-color: $light-blue;
+            color: $dark-blue;
         }
 
         .sing__enviar{
-            background-color: $dark-red;
+            background-color: $light-red;
+            color: $dark-red;
         }
-    }
-
-    .login__termos{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: $gap;
-
-        div{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            label{
-                margin: 0;
-    
-                font: {
-                    family: $fonte-form;
-                    size: 1.2rem;
-                }
-
-                color: $dark-grey;
-            }
-        }
-    }
-
-    .submit{
-        width: 100px;
-        cursor: pointer;
     }
 
     .sing{
