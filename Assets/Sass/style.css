@@ -124,9 +124,8 @@
 .main__form .form__login .login__enviar,
 .main__form .form__login .sing__enviar {
   width: 120px;
-  height: 50px;
+  height: 40px;
   align-self: center;
-  margin: 10px 0 0 0;
   border-radius: 5px;
   font-family: "Fira Sans", sans-serif;
   font-size: 22px;
@@ -140,7 +139,7 @@
 .main__form .form__sing .sing__enviar,
 .main__form .form__login .sing__enviar {
   background-color: #FF4A4A;
-  color: #FF0000;
+  color: #ffffff;
 }
 .main__form .sing {
   animation: translate 0.5s ease forwards;

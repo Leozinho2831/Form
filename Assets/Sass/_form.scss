@@ -136,9 +136,8 @@
         .login__enviar,
         .sing__enviar{
             width: 120px;
-            height: 50px;
+            height: 40px;
             align-self: center;
-            margin: 10px 0 0 0;
 
             border-radius: 5px;
             font: {
@@ -156,7 +155,7 @@
 
         .sing__enviar{
             background-color: $light-red;
-            color: $dark-red;
+            color: $branco;
         }
     }
 
