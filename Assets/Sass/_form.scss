@@ -2,6 +2,7 @@
 
 .main__form{
     display: flex;
+    gap: $gap;
 
     position: relative;
     width: 1000px;
@@ -9,6 +10,7 @@
 
     @include responsive(tablet){
         flex-direction: column;
+        gap: 0;
         width: 500px;
         height: 1000px;
     }
@@ -22,11 +24,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 500px;
+        height: 500px;
 
         position: absolute;
         z-index: 2;
-        width: 500px;
-        height: 500px;
+        cursor: pointer;
 
         background: linear-gradient(135deg,
                     $dark-blue 25%, $light-blue 85%);
@@ -42,11 +45,11 @@
                 family: $fonte-title;
                 weight: 400;
             }
+            color: $branco;
 
             @include responsive(mobile){
-                font-size: 75px
+                font-size: 65px
             }
-            color: $branco;
         }
     }
 
@@ -55,11 +58,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 $space;
+        padding: 0 0 0 40px;
         position: relative;
 
         width: 500px;
         height: 500px;
+
+        @include responsive(tablet){
+            padding: 0 $space;
+        }
 
         @include responsive(mobile){
             width: 300px;
@@ -104,7 +111,8 @@
 
         span{
             position: absolute;
-            right: 25px;
+            margin: 10px 0 0 0;
+            right: 5px;
     
             color: $dark-grey;
 
@@ -117,6 +125,10 @@
     
             &:last-of-type{
                 display: none;
+            }
+
+            @include responsive(tablet){
+                right: 20px;
             }
         }
 

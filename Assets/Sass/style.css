@@ -1,5 +1,6 @@
 .main__form {
   display: flex;
+  gap: 50px;
   position: relative;
   width: 1000px;
   height: 500px;
@@ -7,6 +8,7 @@
 @media (max-width: 1070px) {
   .main__form {
     flex-direction: column;
+    gap: 0;
     width: 500px;
     height: 1000px;
   }
@@ -21,10 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 2;
   width: 500px;
   height: 500px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
   background: linear-gradient(135deg, #1e2885 25%, #707efc 85%);
 }
 @media (max-width: 600px) {
@@ -41,7 +44,7 @@
 }
 @media (max-width: 600px) {
   .main__form .form__capa h1 {
-    font-size: 75px;
+    font-size: 65px;
   }
 }
 .main__form .form__sing,
@@ -49,10 +52,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 0 0 40px;
   position: relative;
   width: 500px;
   height: 500px;
+}
+@media (max-width: 1070px) {
+  .main__form .form__sing,
+  .main__form .form__login {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 600px) {
   .main__form .form__sing,
@@ -97,7 +106,8 @@
 .main__form .form__sing span,
 .main__form .form__login span {
   position: absolute;
-  right: 25px;
+  margin: 10px 0 0 0;
+  right: 5px;
   color: #585757;
   z-index: 1;
   cursor: pointer;
@@ -109,6 +119,12 @@
 .main__form .form__sing span:last-of-type,
 .main__form .form__login span:last-of-type {
   display: none;
+}
+@media (max-width: 1070px) {
+  .main__form .form__sing span,
+  .main__form .form__login span {
+    right: 20px;
+  }
 }
 .main__form .form__sing p,
 .main__form .form__login p {
@@ -197,16 +213,6 @@ body .main {
     background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
   }
 }
-@keyframes translate-reverse {
-  0% {
-    transform: translateX(100%);
-    background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
-  }
-  100% {
-    transform: translateX(0);
-    background: linear-gradient(135deg, #1e2885 25%, #707efc 85%);
-  }
-}
 @keyframes translateResponsive {
   0% {
     transform: translateY(0);
@@ -215,15 +221,5 @@ body .main {
   100% {
     transform: translateY(100%);
     background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
-  }
-}
-@keyframes translate-reverseResponsive {
-  0% {
-    transform: translateY(100%);
-    background: linear-gradient(135deg, #FF0000 25%, #FF4A4A 85%);
-  }
-  100% {
-    transform: translateY(0);
-    background: linear-gradient(135deg, #1e2885 25%, #707efc 85%);
   }
 }/*# sourceMappingURL=style.css.map */

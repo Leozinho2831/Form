@@ -45,17 +45,6 @@ body{
     }
 }
 
-@keyframes translate-reverse{
-    0% {
-        transform: translateX(100%);
-        background: linear-gradient(135deg, $dark-red 25%, $light-red 85%);
-    }
-    100% {
-        transform: translateX(0);
-        background: linear-gradient(135deg, $dark-blue 25%, $light-blue 85%);
-    }
-}
-
 @keyframes translateResponsive {
     0%{
         transform: translateY(0);
@@ -67,16 +56,5 @@ body{
         transform: translateY(100%);
         background: linear-gradient(135deg,
                     $dark-red 25%, $light-red 85%);
-    }
-}
-
-@keyframes translate-reverseResponsive{
-    0% {
-        transform: translateY(100%);
-        background: linear-gradient(135deg, $dark-red 25%, $light-red 85%);
-    }
-    100% {
-        transform: translateY(0);
-        background: linear-gradient(135deg, $dark-blue 25%, $light-blue 85%);
     }
 }
