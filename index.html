@@ -16,38 +16,39 @@
 <body>
     <main class="main">
         <form action="#" class="main__form">
-            <div class="form__capa">
+            <div class="form__capa sing__out" onclick="animationCard()">
                 <h1>Sing-up</h1>
             </div>
             <section class="form__sing">
                 <label for="email">E-mail</label>
                 <input type="email" name="E-mail" id="email">
                 <label for="password">Senha</label>
-                <div class="">
+                <div>
                     <input type="password" name="Senha" id="password" class="form__password">
-                    <span class="material-symbols-outlined">visibility</span>
-                    <span class="material-symbols-outlined">visibility_off</span>   
+                    <span onclick="visibilityInput()" class="material-symbols-outlined">visibility</span>
+                    <span onclick="visibilityInput()" class="material-symbols-outlined">visibility_off</span>   
                 </div>
                 <div>
-                    <p>Login</p>
+                    <p onclick="animationCard()">Login</p>
                 </div>
                 <button type="submit" name="enviar" class="sing__enviar">Enviar</button>
-            </section class="visibility">
+            </section>
             <section class="form__login">
                 <label for="Email">Email</label>
                 <input type="email" id="Email">
                 <label for="Password">Senha</label>
-                <div class="">
+                <div>
                     <input type="password" id="Password" class="form__password">
-                    <span class="material-symbols-outlined">visibility</span>
-                    <span class="material-symbols-outlined">visibility_off</span>
+                    <span onclick="visibilityInput()" class="material-symbols-outlined">visibility</span>
+                    <span onclick="visibilityInput()" class="material-symbols-outlined">visibility_off</span>
                 </div>
                 <div>
-                    <p>Sing-up</p>
+                    <p onclick="animationCard()">Sing-up</p>
                 </div>
                 <button type="submit" name="enviar" class="login__enviar">Enviar</button>
             </section>
         </form>
     </main>
+    <script src="Assets/Javascript/TranslateAnimation.js"></script>
 </body>
 </html>

@@ -176,18 +176,24 @@
 
         @include responsive(tablet){
             animation: translateResponsive 0.5s ease forwards;
+
         }
     }
 
-    .visibility{
-        span{
-            &:first-of-type{
-                display: none;
-            }
+    .sing__out{
+        animation: translate-out 0.5s ease forwards;
+        @include responsive(tablet){
+            animation: translateResponsive-out 0.5s ease forwards;
+        }
+    }
 
-            &:last-of-type{
-                display: inline;
-            }
+    .visibility ~ span{
+        &:first-of-type{
+            display: none;
+        }
+
+        &:last-of-type{
+            display: inline;
         }
     }
 }
