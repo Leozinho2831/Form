@@ -16,7 +16,7 @@ function animationCard(){
     }
 }
 
-function visibilityInput(){
+function visibilityPassword(){
     const passwordInput = document.querySelectorAll('.form__password');
 
     if(passwordInput){
