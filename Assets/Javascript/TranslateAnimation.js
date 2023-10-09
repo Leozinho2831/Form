@@ -3,14 +3,14 @@ function animationCard(){
     const titleCard = document.querySelector('.form__capa h1');
 
     if(card){
-        if(card.classList.contains('sing')){
-            card.classList.remove('sing');
-            card.classList.add('sing__out');
-            titleCard.innerHTML = 'Sing-up';
+        if(card.classList.contains('sign')){
+            card.classList.remove('sign');
+            card.classList.add('sign__out');
+            titleCard.innerHTML = 'Sign-up';
             
         } else {
-            card.classList.add('sing');
-            card.classList.remove('sing__out');
+            card.classList.add('sign');
+            card.classList.remove('sign__out');
             titleCard.innerHTML = 'Login';
         }
     }
